@@ -1,0 +1,3 @@
+mode: set
+github.com/devsres-com/worthless/cmd/worthless/main.go:5.13,10.2 2 0
+github.com/devsres-com/worthless/cmd/worthless/worthless.go:6.41,9.2 1 1
