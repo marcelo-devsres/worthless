@@ -12,7 +12,7 @@ RUN adduser \
     --uid "${UID}" \    
     "${USER}"
 WORKDIR $GOPATH/src/github.com/dev-sres/worthless
-COPY ../ .
+COPY . .
 RUN go get -d -v
 RUN GOOS=linux GOARCH=amd64 go build -ldflags="-w -s" -o /go/bin/worthless
 
