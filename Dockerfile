@@ -18,7 +18,8 @@ RUN go get -d -v
 RUN GOOS=linux GOARCH=amd64 go build -ldflags="-w -s" -o /go/bin/worthless
 
 # Final
-FROM scratch
+# FROM scratch
+FROM tcu
 COPY --from=builder /etc/passwd /etc/passwd
 COPY --from=builder /etc/group /etc/group
 COPY --from=builder /go/bin/worthless /go/bin/worthless
